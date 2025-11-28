@@ -15,8 +15,10 @@ config/www/local/config/config.inc.php
 # Upload directory
 config/www/upload/*
 
-# Gallery images (too large for git)
-gallery/*
+# Gallery images - only include specific albums
+gallery/galleries/*
+!gallery/galleries/智能可穿戴实验室
+!gallery/galleries/智能可穿戴实验室/**
 
 # Backup files
 backup/*
