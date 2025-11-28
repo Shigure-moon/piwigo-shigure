@@ -1,0 +1,48 @@
+# Piwigo specific
+config/www/_data/cache/*
+config/www/_data/combined/*
+config/www/_data/templates_c/*
+config/www/_data/logs/*
+!config/www/_data/cache/.gitkeep
+!config/www/_data/combined/.gitkeep
+!config/www/_data/templates_c/.gitkeep
+!config/www/_data/logs/.gitkeep
+
+# Local configuration (contains sensitive data)
+config/www/local/config/database.inc.php
+config/www/local/config/config.inc.php
+
+# Upload directory
+config/www/upload/*
+
+# Gallery images (too large for git)
+gallery/*
+
+# Backup files
+backup/*
+!backup/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+
+# Docker
+docker-compose.override.yml
+
