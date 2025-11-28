@@ -8,5 +8,3 @@ $conf['sync_chars_regex'] = '/^[-_.\p{L}\p{N}\p{Z}()\[\]]+$/u';
 // Ensure galleries directory is accessible
 // The galleries path should be relative to Piwigo root
 // For Railway deployment, galleries are in /var/www/html/galleries/
-?>
-
