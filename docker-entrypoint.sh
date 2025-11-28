@@ -26,6 +26,12 @@ EOF
     chmod 644 /var/www/html/local/config/database.inc.php
 fi
 
+# Ensure local/config directory exists with proper permissions
+mkdir -p /var/www/html/local/config
+chown -R www-data:www-data /var/www/html/local
+chmod -R 755 /var/www/html/local
+chmod -R 775 /var/www/html/local/config
+
 # Set proper permissions
 chown -R www-data:www-data /var/www/html/_data
 chmod -R 777 /var/www/html/_data

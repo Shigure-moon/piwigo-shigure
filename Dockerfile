@@ -28,8 +28,11 @@ COPY config/www/ /var/www/html/
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html \
     && mkdir -p /var/www/html/_data \
+    && mkdir -p /var/www/html/local/config \
     && chown -R www-data:www-data /var/www/html/_data \
-    && chmod -R 777 /var/www/html/_data
+    && chown -R www-data:www-data /var/www/html/local \
+    && chmod -R 777 /var/www/html/_data \
+    && chmod -R 775 /var/www/html/local/config
 
 # Copy entrypoint script
 COPY docker-entrypoint.sh /usr/local/bin/
