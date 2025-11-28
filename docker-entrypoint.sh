@@ -1,11 +1,16 @@
 #!/bin/bash
 set -e
 
-# Create database config from environment variables if not exists
-if [ ! -f /var/www/html/local/config/database.inc.php ]; then
-    mkdir -p /var/www/html/local/config
-    
-    cat > /var/www/html/local/config/database.inc.php <<EOF
+# Configure Apache to listen on Railway's PORT (default 80)
+PORT=${PORT:-80}
+sed -i "s/Listen 80/Listen ${PORT}/" /etc/apache2/ports.conf
+sed -i "s/<VirtualHost \*:80>/<VirtualHost *:${PORT}>/" /etc/apache2/sites-available/000-default.conf 2>/dev/null || true
+
+# Always create/update database config from environment variables
+# This ensures PHPWG_INSTALLED is always set, preventing reinstallation
+mkdir -p /var/www/html/local/config
+
+cat > /var/www/html/local/config/database.inc.php <<EOF
 <?php
 \$conf['dblayer'] = 'mysqli';
 \$conf['db_base'] = '${DB_NAME:-piwigo_shigure}';
@@ -22,9 +27,8 @@ define('DB_COLLATE', '');
 ?>
 EOF
 
-    chown www-data:www-data /var/www/html/local/config/database.inc.php
-    chmod 644 /var/www/html/local/config/database.inc.php
-fi
+chown www-data:www-data /var/www/html/local/config/database.inc.php
+chmod 644 /var/www/html/local/config/database.inc.php
 
 # Ensure local/config directory exists with proper permissions
 mkdir -p /var/www/html/local/config
