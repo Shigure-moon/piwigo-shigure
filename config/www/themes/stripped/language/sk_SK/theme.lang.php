@@ -1,0 +1,54 @@
+<?php
+
+$lang['Show/hide menu'] = 'Zobraziť/schovať menu';
+$lang['Information'] = 'Informácie';
+$lang['GMap'] = 'Mapa';
+$lang['Interface options']='Ponuka rozhrania';
+$lang['Hide menu by default on category page']='Schovať menu na stránke kategórie';
+$lang['Animate menu']='Animované menu';
+$lang['Animate tabs on picture page']='Animované tabulátory na stránke fotografie';
+$lang['Picture page options']='Ponuka stránky fotografie';
+$lang['Show image title on top of the page (after browse path)']='Zobraziť názov fotografie na hornej časti stránky (za vyhľadávacou cestou)';
+$lang['Show Information tab only to admins']='Zobraziť informačný tabulátor len pre administrátorov';
+$lang['Image autosize options']='Ponuka automatickej veľkosti fotografie';
+$lang['Resize image to fit window']='Zmena veľkosti fotky na veľkosť okna';
+$lang['Include title after resize']='Vrátane názvu po zmene veľkosti';
+$lang['Additional bottom margin after resize']='Voliteľné tlačidlo okraja po zmene veľkosti';
+$lang['Minimum image height after resize']='Minimálna výška fotky po zmene veľkosti';
+$lang['stripped Configuration updated']='čistá aktualizácia Konfigurácie';
+$lang['Force text to lowercase'] = 'Zmeniť text na malé písmo';
+$lang['Show thumbnail caption'] = 'Zobraziť legendu náhľadov';
+$lang['validate'] = 'potvrdiť';
+$lang['Interface style'] = 'Typ rozhrania';
+$lang['Album list layout'] = 'Rozmiestnenie zoznamu albumov';
+$lang['5 albums per row (no album description)'] = '5 albumov na riadok (bez popisu albumu)';
+$lang['3 albums per row (description below thumbnail)'] = '3 albumy na riadok (popis pod náhľadom)';
+$lang['2 albums per row (description beside thumbnail)'] = '2 albumy na riadok (popis vedľa náhľadu)';
+$lang['1 album per row (description beside thumbnail)'] = '1 album na riadok (popis vedľa náhľadu)';
+$lang['Display frame around albums'] = 'Zobrazenie rámika okolo albumov';
+$lang['Display frame around thumbnails'] = 'Zobrazenie rámika okolo náhľadov';
+$lang['Display frame around image'] = 'Zobrazenie rámika okolo fotky';
+$lang['Use navigation arrows on picture'] = 'Použitie navigačných šipiek na fotke';
+$lang['Use navigation arrows outside picture'] = 'Použitie navigačných šipiek mimo fotky';
+$lang['Property to display below picture'] = 'Vlastnosti zobrazené pod fotkou';
+$lang['Title'] = 'Názov';
+$lang['HD picture default display'] = 'Prednastavené zobrazenie HD fotky';
+$lang['fit to screen'] = 'prispôsobiť veľkosti obrazovky';
+$lang['full size'] = 'plná veľkosť';
+$lang['Default tab to be displayed'] = 'Prednastavená tabuľka na zobrazenie';
+$lang['Last displayed'] = 'Naposledy zobrazené';
+$lang['Metadata'] = 'Metadáta';
+$lang['Image preloading options'] = 'Voľba zaťaženia fotky';
+$lang['Activate image preloading'] = 'Aktivovať zaťaženie fotky';
+$lang['On picture page, number of next images to preload'] = 'Na stránke fotky zobraziť počet nasledujúcich fotiek';
+$lang['Preload images on thumbnails page'] = 'Zobrazenie fotiek na stránke náhľadov'; 
+
+$lang['Album thumbnail size'] = 'Veľkosť náhľadu albumu';
+$lang['HD Image size'] = 'Veľkosť HD fotky';
+$lang['Image size'] = 'Veľkosť fotky';
+$lang['Thumbnail size'] = 'Veľkosť náhľadu';
+$lang['Activate HD picture lightbox'] = 'Aktivovať HD foto lightbox';
+$lang['if HD picture available'] = 'ak je HD fotka k dispozícii';
+$lang['never'] = 'nikdy';
+$lang['always'] = 'vždy';
+?>

@@ -1,0 +1,27 @@
+.pswp__scroll-wrap {
+  /* Photoswipe normally makes this semi-transparent, but our slideshow
+   * is ran on its own page, so there's nothing interesting to see behind.
+   */
+  background: black;
+}
+
+/* Info button */
+.pswp__button--info {
+  background: url(../template/info_button.png) center no-repeat !important;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 2dppx) {
+  .pswp__button--info {
+    background: url('../template/info_button@2x.png') center no-repeat !important;
+    background-size: 32px 32px !important;
+  }
+}
+
+/* Based on CC-BY 3.0 licence by https://delapouite.com/
+ * https://game-icons.net/1x1/delapouite/contract.html
+ * https: //game-icons.net/1x1/delapouite/expand.html
+ * (Removed black background and added a black border)
+ */
+.pswp__button--fullscreen {
+  background: url(../template/expand.svg) center no-repeat !important;
+  background-size: 30px !important;
+}

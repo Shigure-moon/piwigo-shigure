@@ -1,0 +1,74 @@
+/* Modern Gallery Theme - Weweb Fonts */
+
+/* DM Serif Display - Headings (from Weweb) */
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/DMSerifDisplay-Regular.ttf') format('truetype');
+}
+
+/* Inter - Body Text (from Weweb) */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Inter-Regular.ttf') format('truetype');
+}
+
+/* General Sans - Alternative Body (from Weweb) */
+@font-face {
+  font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/general.woff2') format('woff2');
+}
+
+/* Circular Web - Alternative (from Weweb) */
+@font-face {
+  font-family: 'Circular Web';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/circularweb-book.woff2') format('woff2');
+}
+
+/* Robert - Alternative (from Weweb) */
+@font-face {
+  font-family: 'Robert';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/robert-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Robert';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/robert-medium.woff2') format('woff2');
+}
+
+/* Zentry - Alternative (from Weweb) */
+@font-face {
+  font-family: 'Zentry';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/zentry-regular.woff2') format('woff2');
+}
+
+/* Alpha Lyrae - Alternative (from Weweb) */
+@font-face {
+  font-family: 'Alpha Lyrae';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/AlphaLyrae-Medium.woff2') format('woff2'),
+       url('../fonts/AlphaLyrae-Medium.woff') format('woff');
+}
+
