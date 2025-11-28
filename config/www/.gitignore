@@ -12,6 +12,7 @@
 !/galleries/index.php
 /local/*
 !/local/**/index.php
+!/local/config/config.inc.php
 
 # IntelliJ
 .idea

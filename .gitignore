@@ -10,7 +10,8 @@ config/www/_data/logs/*
 
 # Local configuration (contains sensitive data)
 config/www/local/config/database.inc.php
-config/www/local/config/config.inc.php
+# config.inc.php is needed for Chinese character support, so we include it
+# config/www/local/config/config.inc.php
 
 # Upload directory
 config/www/upload/*
