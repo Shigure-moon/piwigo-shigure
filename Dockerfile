@@ -25,6 +25,7 @@ WORKDIR /var/www/html
 COPY config/www/ /var/www/html/
 
 # Copy galleries directory (智能可穿戴实验室 album)
+# Note: The galleries path in Piwigo should be configured as ./galleries/
 COPY gallery/galleries/ /var/www/html/galleries/
 
 # Set permissions
