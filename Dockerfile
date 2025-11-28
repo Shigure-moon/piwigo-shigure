@@ -24,15 +24,21 @@ WORKDIR /var/www/html
 # Copy Piwigo files
 COPY config/www/ /var/www/html/
 
+# Copy galleries directory (智能可穿戴实验室 album)
+COPY gallery/galleries/ /var/www/html/galleries/
+
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html \
     && mkdir -p /var/www/html/_data \
     && mkdir -p /var/www/html/local/config \
+    && mkdir -p /var/www/html/galleries \
     && chown -R www-data:www-data /var/www/html/_data \
     && chown -R www-data:www-data /var/www/html/local \
+    && chown -R www-data:www-data /var/www/html/galleries \
     && chmod -R 777 /var/www/html/_data \
-    && chmod -R 775 /var/www/html/local/config
+    && chmod -R 775 /var/www/html/local/config \
+    && chmod -R 755 /var/www/html/galleries
 
 # Copy entrypoint script
 COPY docker-entrypoint.sh /usr/local/bin/
