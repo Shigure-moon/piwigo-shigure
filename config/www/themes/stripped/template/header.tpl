@@ -118,6 +118,117 @@
 .navbar-logo {
   max-height: 30px !important;
 }
+
+/* Pagination Navigation Bar - Modern Styling */
+.pagination-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  margin: 2rem auto !important;
+}
+
+.navigationBar {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  margin: 0 auto !important;
+  padding: 1rem !important;
+  font-size: 0.9rem !important;
+  line-height: 1.5 !important;
+  color: var(--text-primary) !important;
+}
+
+.navigationBar a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 36px !important;
+  height: 36px !important;
+  padding: 0.5rem 0.75rem !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 10px !important;
+  color: var(--text-primary) !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  white-space: nowrap !important;
+  backdrop-filter: blur(10px) !important;
+  font-weight: 500 !important;
+  margin: 0 0.125rem !important;
+}
+
+.navigationBar a:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  transform: translateY(-2px) !important;
+  color: var(--text-primary) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+.navigationBar a:active {
+  transform: translateY(0) !important;
+}
+
+.navigationBar .pageNumberSelected {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 36px !important;
+  height: 36px !important;
+  padding: 0.5rem 0.75rem !important;
+  background: rgba(255, 255, 255, 0.3) !important;
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  border-radius: 10px !important;
+  color: var(--text-primary) !important;
+  font-weight: 600 !important;
+  margin: 0 0.125rem !important;
+  cursor: default !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.navigationBar > span:not(.pageNumberSelected) {
+  display: inline-flex !important;
+  align-items: center !important;
+  color: rgba(255, 255, 255, 0.4) !important;
+  margin: 0 0.25rem !important;
+  user-select: none !important;
+}
+
+@media (max-width: 768px) {
+  .navigationBar {
+    font-size: 0.85rem !important;
+    padding: 0.75rem !important;
+    gap: 0.375rem !important;
+  }
+  
+  .navigationBar a,
+  .navigationBar .pageNumberSelected {
+    min-width: 32px !important;
+    height: 32px !important;
+    padding: 0.4rem 0.6rem !important;
+    font-size: 0.85rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigationBar {
+    font-size: 0.8rem !important;
+    padding: 0.5rem !important;
+    gap: 0.25rem !important;
+  }
+  
+  .navigationBar a,
+  .navigationBar .pageNumberSelected {
+    min-width: 28px !important;
+    height: 28px !important;
+    padding: 0.35rem 0.5rem !important;
+    font-size: 0.8rem !important;
+  }
+}
 </style>
 {/html_head}
 <nav class="navbar">
