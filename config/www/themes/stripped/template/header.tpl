@@ -198,10 +198,19 @@
 .navigationBar .nav-disabled {
   display: inline-flex !important;
   align-items: center !important;
+  justify-content: center !important;
+  min-width: 36px !important;
+  height: 36px !important;
+  padding: 0.5rem 0.75rem !important;
+  background: rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 10px !important;
   color: rgba(255, 255, 255, 0.4) !important;
-  margin: 0 0.25rem !important;
+  margin: 0 0.125rem !important;
   user-select: none !important;
-  cursor: default !important;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+  font-weight: 500 !important;
 }
 
 /* Ensure all navigation links are clickable */
@@ -220,7 +229,8 @@
   }
   
   .navigationBar a,
-  .navigationBar .pageNumberSelected {
+  .navigationBar .pageNumberSelected,
+  .navigationBar .nav-disabled {
     min-width: 32px !important;
     height: 32px !important;
     padding: 0.4rem 0.6rem !important;
@@ -236,7 +246,8 @@
   }
   
   .navigationBar a,
-  .navigationBar .pageNumberSelected {
+  .navigationBar .pageNumberSelected,
+  .navigationBar .nav-disabled {
     min-width: 28px !important;
     height: 28px !important;
     padding: 0.35rem 0.5rem !important;

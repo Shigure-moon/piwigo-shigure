@@ -742,15 +742,24 @@ body:not(:has(#waterfall-thumbnails)):not(:has(ul#thumbnails)) .navigationBar {
   color: var(--text-primary);
 }
 
-/* Disabled links (when no href, just text) */
+/* Disabled links (when no href, just text) - styled as buttons but disabled */
 .navigationBar > span:not(.pageNumberSelected),
 .navigationBar .nav-disabled {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0.5rem 0.75rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius);
   color: rgba(255, 255, 255, 0.4);
-  margin: 0 0.25rem;
+  margin: 0 0.125rem;
   user-select: none;
-  cursor: default;
+  cursor: not-allowed;
+  opacity: 0.6;
+  font-weight: 500;
 }
 
 /* Ensure all navigation links are clickable */
@@ -770,7 +779,8 @@ body:not(:has(#waterfall-thumbnails)):not(:has(ul#thumbnails)) .navigationBar {
   }
   
   .navigationBar a,
-  .navigationBar .pageNumberSelected {
+  .navigationBar .pageNumberSelected,
+  .navigationBar .nav-disabled {
     min-width: 32px;
     height: 32px;
     padding: 0.4rem 0.6rem;
@@ -786,7 +796,8 @@ body:not(:has(#waterfall-thumbnails)):not(:has(ul#thumbnails)) .navigationBar {
   }
   
   .navigationBar a,
-  .navigationBar .pageNumberSelected {
+  .navigationBar .pageNumberSelected,
+  .navigationBar .nav-disabled {
     min-width: 28px;
     height: 28px;
     padding: 0.35rem 0.5rem;
