@@ -159,6 +159,10 @@
   backdrop-filter: blur(10px) !important;
   font-weight: 500 !important;
   margin: 0 0.125rem !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  position: relative !important;
+  z-index: 1 !important;
 }
 
 .navigationBar a:hover {
@@ -190,12 +194,22 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
 }
 
-.navigationBar > span:not(.pageNumberSelected) {
+.navigationBar > span:not(.pageNumberSelected),
+.navigationBar .nav-disabled {
   display: inline-flex !important;
   align-items: center !important;
   color: rgba(255, 255, 255, 0.4) !important;
   margin: 0 0.25rem !important;
   user-select: none !important;
+  cursor: default !important;
+}
+
+/* Ensure all navigation links are clickable */
+.navigationBar a.nav-page-link {
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  position: relative !important;
+  z-index: 1 !important;
 }
 
 @media (max-width: 768px) {
