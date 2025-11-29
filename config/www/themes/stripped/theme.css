@@ -659,12 +659,16 @@ ul.thumbnails,
 /* Navigation Bar ------------------------------------------------------------------------------ */
 
 .navigationBar {
+  /* Modern styling is handled in modern.css */
+  /* Keep minimal fallback for older browsers */
   padding: 0.5em;
   text-align: center;
 }
 
 .navigationBar a {
-	border-bottom: 1px dotted;
+	/* Modern styling is handled in modern.css */
+	/* Remove dotted border for modern look */
+	border-bottom: none;
 }
 
 #thumbnails_block1 .navigationBar {
